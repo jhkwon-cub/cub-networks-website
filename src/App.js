@@ -42,13 +42,13 @@ function App() {
                 className="text-gray-700 hover:text-blue-600 transition duration-200"
               >
                 {section === "about"
-                  ? "회사소개"
+                  ? "About"
                   : section === "services"
-                  ? "서비스"
+                  ? "Services"
                   : section === "references"
-                  ? "레퍼런스"
+                  ? "References"
                   : section === "recruit"
-                  ? "채용"
+                  ? "Recruit"
                   : "연락처"}
               </button>
             ))}
