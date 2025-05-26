@@ -211,7 +211,7 @@ function RecruitStep({ number, label }) {
       <div className="bg-blue-600 text-white px-5 py-3 rounded-md shadow-md font-semibold text-lg">
         {label}
       </div>
-      <span className="mt-2 text-gray-800 font-medium">단계 {number}</span>
+      <span className="mt-2 text-gray-800 font-medium"></span>
     </div>
   );
 }
