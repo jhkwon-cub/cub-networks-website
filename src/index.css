@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 아래는 선택 사항 - 필요에 따라 커스텀 스타일을 추가할 수 있습니다 */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  @apply bg-white text-gray-900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  @apply text-blue-600 hover:underline;
+}
+
+h1, h2, h3, h4 {
+  @apply font-bold text-gray-800;
+}
