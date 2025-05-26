@@ -49,7 +49,7 @@ function App() {
                   ? "References"
                   : section === "recruit"
                   ? "Recruit"
-                  : "연락처"}
+                  : "Contact"}
               </button>
             ))}
           </nav>
@@ -155,6 +155,47 @@ function App() {
             <RecruitArrow />
             <RecruitStep number="5" label="최종합격" />
           </div>
+          {/* 채용 상세 정보 */}
+          <div className="mt-16 bg-white p-8 rounded-xl shadow-md text-left text-gray-800 space-y-6">
+            <h4 className="text-2xl font-bold mb-4">포지션 및 자격요건</h4>
+
+            <div>
+              <h5 className="font-semibold mb-1">담당업무</h5>
+              <ul className="list-disc list-inside text-gray-700 ml-4 space-y-1">
+                <li>웹/ 모바일 취약점 진단</li>
+                <li>인프라 취약점 진단</li>
+                <li>시나리오 시스템 모의해킹</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 className="font-semibold mb-1">스킬</h5>
+              <p className="ml-4 text-gray-700">JAVA, 컴퓨터활용능력, 웹해킹, 모바일 해킹</p>
+            </div>
+
+            <div>
+              <h5 className="font-semibold mb-1">핵심역량</h5>
+              <p className="ml-4 text-gray-700">성실성, 성장지향성, 적응성</p>
+            </div>
+
+            <div>
+              <h5 className="font-semibold mb-1">자격요건</h5>
+              <ul className="list-disc list-inside text-gray-700 ml-4 space-y-1">
+                <li>학력: 대졸이상 (졸업 예정자 가능)</li>
+                <li>경력: 신입/경력</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5 className="font-semibold mb-1">우대사항</h5>
+              <ul className="list-disc list-inside text-gray-700 ml-4 space-y-1">
+                <li>문서작성 우수자</li>
+                <li>관련 자격증 보유자</li>
+                <li>자격증: 정보보안기사, 정보처리기사</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -162,7 +203,7 @@ function App() {
       <section id="contact" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 md:flex md:items-center md:justify-between">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <h3 className="text-3xl font-bold mb-4">연락처</h3>
+            <h3 className="text-3xl font-bold mb-4">Contact</h3>
             <p className="text-gray-700 mb-2">이메일: kjh@cub.kr</p>
             <p className="text-gray-700 mb-4">
               주소: 서울시 금천구 가산디지털1로 225 9층 큐브네트웍스
@@ -209,7 +250,7 @@ function ServiceCard({ title }) {
 function RecruitStep({ number, label }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="bg-blue-600 text-white px-5 py-3 rounded-md shadow-md font-semibold text-lg">
+      <div className="bg-blue-900 text-white px-5 py-3 rounded-md shadow-md font-semibold text-lg">
         {label}
       </div>
       <span className="mt-2 text-gray-800 font-medium"></span>
