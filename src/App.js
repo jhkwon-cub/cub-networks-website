@@ -100,7 +100,7 @@ function App() {
 
       {/* 서비스 */}
       <section id="services" className="py-20 max-w-6xl mx-auto px-4">
-        <h3 className="text-3xl font-bold text-center mb-12">서비스</h3>
+        <h3 className="text-3xl font-bold text-center mb-12">Services</h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {[
             "정보보호 관리 체계/인증 컨설팅",
@@ -118,7 +118,7 @@ function App() {
       {/* 레퍼런스 */}
       <section id="references" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h3 className="text-3xl font-bold text-center mb-12">레퍼런스</h3>
+          <h3 className="text-3xl font-bold text-center mb-12">References</h3>
           <div className="space-y-8">
             <div>
               <h4 className="text-xl font-semibold text-blue-600 mb-2">2024년</h4>
@@ -143,7 +143,7 @@ function App() {
       {/* 채용 */}
       <section id="recruit" className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h3 className="text-3xl font-bold mb-12">채용 절차</h3>
+          <h3 className="text-3xl font-bold mb-12">Recruit</h3>
           <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-6">
             <RecruitStep number="1" label="서류전형" />
             <RecruitArrow />
