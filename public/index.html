@@ -1,43 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/logo2.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />-->
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>CuB Networks</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CUB Networks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Noto Sans KR', sans-serif;
+        scroll-behavior: smooth;
+      }
+      :root {
+        --highlight: #1f2937;
+      }
+    </style>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <body id="top" class="bg-white text-gray-900">
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md p-4 border-b border-gray-300 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto">
+      <div class="flex items-center gap-4">
+        <a href="#top"><img src="/logo1.jpg" alt="CUB Networks Logo" class="w-36 h-auto cursor-pointer" /></a>
+      </div>
+      <nav class="mt-4 md:mt-0 space-x-4 text-sm md:text-base text-gray-800">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#specialist" class="hover:underline">Specialist</a>
+        <a href="#recruit" class="hover:underline">Recruit</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <section class="w-full bg-white py-20 px-4 text-center text-gray-800">
+      <div class="max-w-4xl mx-auto">
+        <img src="/main1.png" alt="보안 이미지" class="mx-auto max-w-lg mb-8">
+        <h1 class="text-2xl md:text-4xl font-bold mb-4">정보보안의 새로운 기준</h1>
+        <p class="text-base md:text-lg">CuB Networks는 전문성과 신뢰를 기반으로 보안 컨설팅을 제공합니다.</p>
+      </div>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <main class="flex flex-col items-center justify-center py-28 px-6 md:px-12 lg:px-16 bg-gray-100">
+      <!-- About Section -->
+      <section id="about" class="w-full max-w-6xl px-6 md:px-10 pt-3 mb-28">
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <div class="flex-1">
+            <img src="/about-office.jpg" alt="Office" class="rounded-xl shadow-md w-full h-auto" />
+          </div>
+          <div class="flex-1 space-y-6">
+            <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow p-6 hover:shadow-md">
+              <h3 class="text-lg font-bold text-gray-800">회사 소개</h3>
+              <p class="text-sm leading-relaxed">(주)큐브네트웍스는 모의해킹을 중심으로 정보보안 컨설팅을 전문으로 하는 기업으로, 다양한 산업 분야에 투입되어 보안 취약점을 진단하고 최적의 보안 솔루션을 제공합니다.</p>
+            </div>
+            <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow p-6 hover:shadow-md">
+              <h3 class="text-lg font-bold text-gray-800">전문 인력 운영</h3>
+              <p class="text-sm leading-relaxed">사내 기술 교육과 지식 공유를 활발히 진행하며, 여러 보안 전문 업체와 협력하여 고객에게 높은 수준의 인적·지적 보안 서비스를 제공하기 위해 최선을 다하고 있습니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="w-full max-w-6xl px-6 md:px-10 pt-28 mb-28">
+        <h2 class="text-2xl font-bold text-[color:var(--highlight)] text-center mb-10">Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="bg-gradient-to-b from-gray-50 to-white border border-gray-200 p-6 rounded-xl shadow hover:shadow-md transition-all">
+            <h3 class="text-lg font-bold text-gray-800">정보보호 관리 체계/인증 컨설팅</h3>
+            <p class="text-sm leading-relaxed text-gray-700">ISMS-P, ISO27001 등 주요 보안 인증을 위한 체계적 컨설팅을 지원합니다.</p>
+          </div>
+          <div class="bg-white border border-gray-200 p-6 rounded-xl shadow">
+            <h3 class="text-lg font-bold text-gray-800">정보보호 솔루션 제공</h3>
+            <p class="text-sm leading-relaxed text-gray-700">고객 환경에 최적화된 보안 솔루션을 제안합니다。</p>
+          </div>
+          <div class="bg-white border border-gray-200 p-6 rounded-xl shadow">
+            <h3 class="text-lg font-bold text-gray-800">웹 어플리케이션 해킹</h3>
+            <p class="text-sm leading-relaxed text-gray-700">최신 웹 공격 기법을 반영한 실전 모의해킹으로 보안 취약점을 진단합니다。</p>
+          </div>
+          <div class="bg-white border border-gray-200 p-6 rounded-xl shadow">
+            <h3 class="text-lg font-bold text-gray-800">모바일 어플리케이션 해킹</h3>
+            <p class="text-sm leading-relaxed text-gray-700">Android, iOS 앱에 대한 정밀 해킹 테스트로 보안 위협을 사전에 차단합니다。</p>
+          </div>
+          <div class="bg-white border border-gray-200 p-6 rounded-xl shadow">
+            <h3 class="text-lg font-bold text-gray-800">시나리오 기반 시스템 해킹</h3>
+            <p class="text-sm leading-relaxed text-gray-700">현실적인 공격 시나리오를 기반으로 내부 시스템의 방어력을 검증합니다。</p>
+          </div>
+          <div class="bg-white border border-gray-200 p-6 rounded-xl shadow">
+            <h3 class="text-lg font-bold text-gray-800">인프라 취약점 진단</h3>
+            <p class="text-sm leading-relaxed text-gray-700">전반적인 IT 인프라의 보안 취약점을 종합적으로 진단합니다。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Specialist Section -->
+      <section id="specialist" class="w-full max-w-6xl px-6 md:px-10 pt-24 mb-24">
+        <h2 class="text-2xl font-bold text-[color:var(--highlight)] text-center mb-10">Specialist</h2>
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <div class="flex-1 space-y-6">
+            <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow p-6 hover:shadow-md">
+              <p class="text-sm leading-relaxed">체계적인 사내 교육 시스템과 실전 중심의 기술 트레이닝을 통해 정보보안 분야의 전문성과 실무 능력을 고루 갖춘 인재를 육성합니다。</p>
+            </div>
+            <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow p-6 hover:shadow-md">
+              <p class="text-sm leading-relaxed">자기개발을 위한 자격 취득 지원 및 커리어 성장 프로그램을 운영하며、고객에게는 검증된 최고 수준의 기술 인력을 안정적으로 제공합니다。</p>
+            </div>
+          </div>
+          <div class="flex-1">
+            <img src="/specialist.png" alt="Specialist" class="rounded-xl shadow-md w-full h-auto" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Recruit Section -->
+      <section id="recruit" class="w-full max-w-6xl px-6 md:px-10 pt-28 mb-6">
+        <h2 class="text-2xl font-bold text-[color:var(--highlight)] text-center mb-10">Recruit</h2>
+        <div class="flex flex-wrap justify-center items-center gap-2 mb-8 text-center">
+          <div class="flex items-center gap-2">
+            <div class="bg-gray-900 text-white px-5 py-3 rounded-xl font-semibold shadow">채용지원</div>
+            <span class="text-gray-900">→</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="bg-gray-900 text-white px-5 py-3 rounded-xl font-semibold shadow">서류평가</div>
+            <span class="text-gray-900">→</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="bg-gray-900 text-white px-5 py-3 rounded-xl font-semibold shadow">실무면접</div>
+            <span class="text-gray-900 md:inline hidden">→</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="bg-gray-900 text-white px-5 py-3 rounded-xl font-semibold shadow">임원면접</div>
+            <span class="text-gray-900">→</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="bg-gray-900 text-white px-5 py-3 rounded-xl font-semibold shadow">최종합격</div>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10 mt-10">
+          <div class="md:w-1/2 flex items-center justify-center">
+            <img src="/recruit-image.jpg" alt="채용 관련 이미지" class="rounded-xl shadow-md max-h-[400px] w-full object-cover" />
+          </div>
+          <div class="md:w-1/2">
+            <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow-lg p-6">
+              <h3 class="text-xl font-bold border-b border-gray-200 pb-2 mb-4 text-gray-800">포지션 및 자격요건</h3>
+              <div class="space-y-4 text-sm md:text-base">
+                <div>
+                  <p class="font-bold text-gray-800">담당업무</p>
+                  <ul class="list-disc list-inside text-gray-700">
+                    <li>웹/모바일 취약점 진단</li>
+                    <li>인프라 취약점 진단</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-800">자격요건</p>
+                  <ul class="list-disc list-inside text-gray-700">
+                    <li>학력: 4년제 대졸이상 (졸업 예정자 가능)</li>
+                    <li>경력: 신입/경력</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-800">우대사항</p>
+                  <ul class="list-disc list-inside text-gray-700">
+                    <li>관련 교육 수료자</li>
+                    <li>관련 자격증 보유자</li>
+                    <li>자격증: 정보보안기사, 정보처리기사</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-800">복리후생</p>
+                  <ul class="list-disc list-inside text-gray-700">
+                    <li>웰컴 키트</li>
+                    <li>장비 지원</li>
+                    <li>멘토링 제도</li>
+                    <li>신입 사원 교육</li>
+                    <li>자격증취득지원</li>
+                    <li>성과급</li>
+                    <li>그 외 다수</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="w-full max-w-6xl px-6 md:px-10 mt-32 pt-20 mb-24">
+        <h2 class="text-2xl font-bold text-[color:var(--highlight)] text-center mb-10">Contact</h2>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+          <div class="md:w-1/2 bg-white text-gray-800 border border-gray-300 rounded-xl shadow-lg p-6 space-y-4 flex flex-col justify-center">
+            <p><strong>이메일:</strong> kjh@cub.kr</p>
+            <p><strong>주소:</strong> 서울시 금천구 가산디지털1로 225</p>
+            <p>  9층 큐브네트웍스</p>
+            <p><strong>영업시간:</strong> 09:00 ~ 18:00</p>
+          </div>
+          <div className="md:w-1/2 flex justify-center">
+            <a
+              href="https://naver.me/5pqayvTB"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/map.png"
+                alt="회사 위치 지도"
+                className="w-full md:w-[600px] h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="text-center text-sm text-gray-600 py-6 border-t border-gray-200 mt-16">
+      © 2025 CuB Networks. All rights reserved.
+    </footer>
   </body>
 </html>
