@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CUB Networks | Security Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --highlight: #41413F;
+        ---highlight: #41413F;
+        --accent: #5F6F65;
+        --surface: rgba(255, 255, 255, 0.86);
+      }
+      .step-tone-90 { background-color: rgba(65, 65, 63, 0.92); }
+      .step-tone-80 { background-color: rgba(65, 65, 63, 0.86); }
+      .step-tone-70 { background-color: rgba(65, 65, 63, 0.78); }
+      .step-tone-60 { background-color: rgba(65, 65, 63, 0.7); }
+      .step-tone-58 { background-color: rgba(65, 65, 63, 0.58); }
+      body {
+        font-family: 'Noto Sans KR', sans-serif;
+        scroll-behavior: smooth;
+        background-color: #F5F6F8;
+      }
+      .glass-card {
+        background: var(--surface);
+        backdrop-filter: blur(18px);
+      }
+    </style>
+  </head>
+  <body id="top" class="bg-slate-100 text-gray-900">
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md p-4 border-b border-gray-300 flex flex-col md:flex-row items-center justify-between w-full">
+      <div class="flex items-center gap-4">
+        <a href="index.html"><img src="logo1.jpg" alt="CUB Networks Logo" class="w-36 h-auto cursor-pointer" /></a>
+      </div>
+      <nav class="mt-4 md:mt-0 flex flex-wrap items-center gap-4 text-sm md:text-base text-gray-800">
+        <a href="index.html#about" class="font-bold text-[color:var(---highlight)]">About</a>
+        <div class="relative group">
+          <a href="index.html#services" class="inline-flex items-center font-bold text-[color:var(---highlight)] focus:outline-none">
+            Services
+            <svg class="ml-1 h-3 w-3 text-gray-500 transition group-hover:rotate-180 group-focus-within:rotate-180" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </a>
+          <div class="pointer-events-none absolute left-1/2 top-full z-10 w-48 -translate-x-1/2 rounded-xl border border-gray-200 bg-white p-2 text-sm shadow-lg opacity-0 scale-95 transition duration-150 ease-out group-hover:pointer-events-auto group-hover:opacity-100 group-hover:scale-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 group-focus-within:scale-100">
+            <a href="services.html" class="block rounded-lg px-3 py-2 font-semibold text-[var(--highlight)]" aria-current="page">Services</a>
+            <a href="sentinelone.html" class="block rounded-lg px-3 py-2 font-semibold text-[var(--highlight)]" aria-current="page">SentinelOne</a>
+          </div>
+        </div>
+        <a href="index.html#specialist" class="font-bold text-[color:var(---highlight)]">Specialist</a>
+        <a href="index.html#history" class="font-bold text-[color:var(---highlight)]">History</a>
+        <a href="index.html#pjreferences" class="font-bold text-[color:var(---highlight)]">Project References</a>
+        <a href="index.html#recruit" class="font-bold text-[color:var(---highlight)]">Recruit</a>
+        <a href="index.html#contact" class="font-bold text-[color:var(---highlight)]">Contact</a>
+      </nav>
+    </header>
+
+    <section class="w-full h-[50vh] bg-[url('gray_baner.jpg')] bg-center bg-cover bg-no-repeat flex items-center text-white inset-0">
+      <div class="relative mx-auto flex max-w-6xl flex-col gap-8 px-6 py-28 md:px-12 md:py-40 text-left">
+        <span class="inline-flex w-fit items-center rounded-full border border-white/30 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-white/80">
+          Security Services
+        </span>
+        <h1 class="text-3xl font-bold leading-tight md:text-5xl md:leading-tight">
+          정보보안을 비즈니스 경쟁력으로 바꾸는<br>CuB Networks
+        </h1>
+        <p class="max-w-3xl text-base text-white/85 md:text-lg">
+          전략 수립에서 기술 구현, 운영과 대응까지 전 과정을 연결해 조직의 보안 역량을 끌어올립니다.<br><br>
+          업종별 규제와 환경을 이해하는 전문가들이 고객 맞춤형 보안 여정을 설계합니다.
+        </p>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <a href="index.html#contact" class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[var(--highlight)] shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
+            상담 신청하기
+          </a>
+          <a href="services.html" class="inline-flex items-center justify-center rounded-full border border-white/60 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+            서비스 전체 보기
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <main class="flex flex-col items-center gap-24 px-6 py-24 md:px-12 lg:px-20">
+      <section class="w-full max-w-6xl">
+        <div class="glass-card rounded-3xl px-6 py-12 shadow-xl ring-1 ring-white/60 md:px-12 md:py-16">
+          <div class="mx-auto flex max-w-3xl flex-col gap-4 text-center">
+            <span class="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--accent)]">Our Focus</span>
+            <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">복잡한 보안 과제를 하나의 여정으로 설계합니다</h2>
+            <p class="text-base text-gray-600 md:text-lg">거버넌스, 기술, 운영을 유기적으로 연결해 조직이 지속 가능한 보안 체계를 구축하도록 돕습니다.<br><br>CuB Networks는 업종과 조직 규모에 맞춘 현실적인 실행 전략을 제시합니다.</p>
+          </div>
+          <div class="mt-10 grid gap-6 md:grid-cols-3">
+            <article class="h-full rounded-2xl border border-white/70 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+              <h3 class="text-lg font-semibold text-gray-900">거버넌스 &amp; 컴플라이언스</h3>
+              <p class="mt-3 text-sm leading-relaxed text-gray-600">ISMS-P, ISO 27001 등 주요 인증과 규제 대응 경험을 바탕으로 보안 정책과 프로세스를 설계하고 심사까지 함께합니다.</p>
+              <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                <li>• 인증 취득 및 사후 관리 로드맵</li>
+                <li>• 리스크 관리 체계 고도화</li>
+                <li>• 임직원 보안 인식 제고 프로그램</li>
+              </ul>
+            </article>
+            <article class="h-full rounded-2xl border border-white/70 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+              <h3 class="text-lg font-semibold text-gray-900">보안 엔지니어링</h3>
+              <p class="mt-3 text-sm leading-relaxed text-gray-600">클라우드, 네트워크, 엔드포인트, 애플리케이션을 아우르는 보안 아키텍처를 설계하고 최신 위협에 맞춰 지속적으로 고도화합니다.</p>
+              <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                <li>• 통합 보안 아키텍처 &amp; PoC</li>
+                <li>• 솔루션 구축 및 자동화</li>
+                <li>• 데이터 보호 및 접근 통제</li>
+              </ul>
+            </article>
+            <article class="h-full rounded-2xl border border-white/70 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+              <h3 class="text-lg font-semibold text-gray-900">운영 &amp; 대응</h3>
+              <p class="mt-3 text-sm leading-relaxed text-gray-600">운영 조직과 협업해 탐지·대응·복구 프로세스를 정립하고, 위협 헌팅과 교육까지 제공해 실질적인 보안 체계를 완성합니다.</p>
+              <ul class="mt-4 space-y-2 text-sm text-gray-500">
+                <li>• 모니터링 및 관제 고도화</li>
+                <li>• 사고 대응 시나리오 &amp; Simulation</li>
+                <li>• 개발·운영 팀 맞춤 교육</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="services1" class="w-full max-w-6xl">
+        <div class="glass-card rounded-3xl px-6 py-12 shadow-xl ring-1 ring-white/60 md:px-12 md:py-16">
+          <div class="mx-auto flex max-w-3xl flex-col items-center gap-3 text-center">
+            <span class="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--accent)]">Service 01</span>
+            <h2 class="text-3xl font-bold text-gray-900">정보보호 관리 체계/인증 컨설팅</h2>
+            <p class="text-base text-gray-600">국내외 법적 요구와 표준을 기반으로 현황을 진단하고, 인증 취득과 운영 정착까지 이어지는 실질적인 관리 체계를 설계합니다.</p>
+          </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+            <div class="rounded-2xl step-tone-90 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 01</span>
+              <p class="mt-2 text-sm font-semibold">환경 분석</p>
+            </div>
+            <div class="rounded-2xl step-tone-80 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 02</span>
+              <p class="mt-2 text-sm font-semibold">위험 분석</p>
+            </div>
+            <div class="rounded-2xl step-tone-70 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 03</span>
+              <p class="mt-2 text-sm font-semibold">구현</p>
+            </div>
+            <div class="rounded-2xl step-tone-60 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 04</span>
+              <p class="mt-2 text-sm font-semibold">이행 지원</p>
+            </div>
+          </div>
+          <div class="mt-12 grid gap-8 lg:grid-cols-[minmax(0,0.5fr)_minmax(0,1.05fr)]">
+            <div class="overflow-hidden rounded-3xl shadow-xl ring-1 ring-black/10">
+              <img src="services/services1.png" alt="정보보호 관리체계 컨설팅 현장 이미지" class="h-full w-full min-h-[280px] object-cover" />
+            </div>
+            <div class="grid gap-6 sm:grid-cols-1">
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">체계적인 인증 준비</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">국내외 법적 규제와 표준을 기반으로 조직의 현황을 진단하고, 인증 취득을 위한 Gap 분석을 수행합니다.<br><br>이를 통해 기업은 체계적인 보안 정책과 절차를 수립할 수 있으며, 인증 심사 과정에서 발생할 수 있는 리스크를 최소화할 수 있습니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">맞춤형 개선 로드맵 수립</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">산업별 특성과 기업 규모를 고려한 개선 방안을 도출하고, 단계별 실행 로드맵을 수립합니다.<br><br>보안 관리체계의 부족한 부분을 선제적으로 보완하여 인증 취득뿐 아니라 장기적인 운영 안정성까지 확보할 수 있습니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">안정적인 운영 정착</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">인증 이후에도 지속적인 관리체계 운영을 지원하며, 내부 감사∙교육∙컨설팅을 통해 보안 의식 및 역량을 강화합니다.<br><br>또한 최신 보안 위협과 제도 변화에 맞춰 관리체계를 업데이트하여, 기업의 정보보호 수준을 꾸준히 유지하고 향상시킵니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">기업 가치 제고</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">체계적인 보안 인증 준비와 운영을 통해 대외 신뢰도를 높이고, 거래처∙고객∙규제기관에 대한 대응력을 강화할 수 있습니다.<br><br>이는 기업의 경쟁력 확보와 장기적 성장을 위한 기반이 됩니다.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services2" class="w-full max-w-6xl">
+        <div class="glass-card rounded-3xl px-6 py-12 shadow-xl ring-1 ring-white/60 md:px-12 md:py-16">
+          <div class="mx-auto flex max-w-3xl flex-col items-center gap-3 text-center">
+            <span class="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--accent)]">Service 02</span>
+            <h2 class="text-3xl font-bold text-gray-900">정보보호 솔루션 제공</h2>
+            <p class="text-base text-gray-600">환경 분석부터 구축, 운영까지 엔드투엔드로 지원하여 조직의 보안 투자 효과를 극대화합니다.</p>
+          </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+            <div class="rounded-2xl step-tone-90 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 01</span>
+              <p class="mt-2 text-sm font-semibold">환경 분석</p>
+            </div>
+            <div class="rounded-2xl step-tone-80 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 02</span>
+              <p class="mt-2 text-sm font-semibold">위험 분석</p>
+            </div>
+            <div class="rounded-2xl step-tone-70 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 03</span>
+              <p class="mt-2 text-sm font-semibold">구현</p>
+            </div>
+            <div class="rounded-2xl step-tone-60 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 04</span>
+              <p class="mt-2 text-sm font-semibold">이행 지원</p>
+            </div>
+          </div>
+          <div class="mt-12 grid gap-8 lg:grid-cols-[minmax(0,0.5fr)_minmax(0,1.05fr)]">
+            <div class="overflow-hidden rounded-3xl shadow-xl ring-1 ring-black/10">
+              <img src="services/services2.png" alt="정보보호 솔루션 구축 이미지" class="h-full w-full min-h-[280px] object-cover" />
+            </div>
+            <div class="grid gap-6 sm:grid-cols-1">
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">맞춤형 보안 아키텍처 설계</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">기업의 IT 환경과 보안 성숙도를 분석하여 최적화된 보안 아키텍처를 설계합니다.<br><br>이를 통해 보안 리스크를 최소화하고, 고객사의 운영 환경에 부합하는 효율적인 솔루션을 제공합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">전방위 보안 솔루션 제공</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">네트워크 보안, 엔드포인트 보안, 클라우드 보안, 데이터 보호, 접근제어 등 전반적인 영역을 아우르는 솔루션을 제공합니다.<br><br>또한 최신 위협 동향과 보안 기술을 반영하여 신뢰성 높은 방어 체계를 구축합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">안정적인 구축 및 운영 지원</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">솔루션 도입 이후에도 시스템 통합, 정책 설정, 모니터링, 유지보수 등 운영 전 과정을 지원합니다.<br><br>전문 엔지니어의 지속적인 관리와 기술 지원을 통해 보안 체계가 안정적으로 유지되도록 보장합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">지속적인 업그레이드와 최적화</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">보안 위협의 진화와 IT 환경 변화에 따라 솔루션을 지속적으로 개선하고 업그레이드합니다.<br><br>고객 피드백과 운영 데이터를 바탕으로 보안 체계를 최적화하여, 장기적으로 안정적이고 효율적인 보안 운영 환경을 제공합니다.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services3" class="w-full max-w-6xl">
+        <div class="glass-card rounded-3xl px-6 py-12 shadow-xl ring-1 ring-white/60 md:px-12 md:py-16">
+          <div class="mx-auto flex max-w-3xl flex-col items-center gap-3 text-center">
+            <span class="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--accent)]">Service 03</span>
+            <h2 class="text-3xl font-bold text-gray-900">웹 애플리케이션 모의해킹</h2>
+            <p class="text-base text-gray-600">비즈니스 로직과 사용자 흐름까지 고려한 심층 진단으로 현실적인 공격 시나리오를 검증합니다.</p>
+          </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+            <div class="rounded-2xl step-tone-90 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 01</span>
+              <p class="mt-2 text-sm font-semibold">사전 업무 협의</p>
+            </div>
+            <div class="rounded-2xl step-tone-80 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 02</span>
+              <p class="mt-2 text-sm font-semibold">정보 수집</p>
+            </div>
+            <div class="rounded-2xl step-tone-70 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 03</span>
+              <p class="mt-2 text-sm font-semibold">모의침투</p>
+            </div>
+            <div class="rounded-2xl step-tone-60 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 04</span>
+              <p class="mt-2 text-sm font-semibold">보고</p>
+            </div>
+          </div>
+          <div class="mt-12 grid gap-8 lg:grid-cols-[minmax(0,0.5fr)_minmax(0,1.05fr)]">
+            <div class="overflow-hidden rounded-3xl shadow-xl ring-1 ring-black/10">
+              <img src="services/services3.png" alt="웹 애플리케이션 보안 진단 이미지" class="h-full w-full min-h-[280px] object-cover" />
+            </div>
+            <div class="grid gap-6 sm:grid-cols-1">
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">전문성 기반 진단</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">숙련된 보안 전문가가 자동 스캐닝과 수동 탐색을 병행하여 취약점을 발굴합니다.<br><br>단순한 시그니처 탐지에 그치지 않고 비즈니스 로직·권한체계·세션흐름을 분석하여 실무에서 악용될 가능성이 높은 취약점을 중점적으로 점검합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">진단 방법론</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">자동화 도구(Burp Suite, OWASP ZAP 등)로 넓은 범위를 스크리닝하고, 수동 검증으로 오탐 제거 및 고난이도 취약점(논리적 결함)을 탐지합니다.<br><br>취약점 재현 단계에서는 PoC(증명 코드) 및 단계별 공격 시나리오를 작성하여 실제 영향도를 입증합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">보고서 및 대응 지원</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">발견된 취약점은 위험도(상·중·하) 및 CVSS 등급에 따라 정리하고, 재현 절차·증거 스크린샷·영향 범위·우선순위 기반 개선방안을 제공합니다.<br><br>또한 패치 가이드, 안전한 코딩 샘플, WAF/필터 정책 예시 등 실무 적용 가능한 해결책을 함께 제시합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">교육·전수 활동</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">개발자·운영자 대상 취약점 사례 교육과 모의 침투 결과를 반영한 코드 리뷰 세션을 제공하여 재발 방지 역량을 강화합니다.<br><br>OWASP 기반 보안 체크리스트와 CI/CD 연동 스캐닝 권고사항도 포함됩니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">기대 효과</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">웹 서비스의 보안 수준을 실질적으로 향상시켜 고객 데이터 유출, 서비스 중단, 금전적 손실 등의 리스크를 낮춥니다.<br><br>또한 규제·컴플라이언스 대응력을 강화하여 대외 신뢰도를 제고합니다.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services4" class="w-full max-w-6xl">
+        <div class="glass-card rounded-3xl px-6 py-12 shadow-xl ring-1 ring-white/60 md:px-12 md:py-16">
+          <div class="mx-auto flex max-w-3xl flex-col items-center gap-3 text-center">
+            <span class="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--accent)]">Service 04</span>
+            <h2 class="text-3xl font-bold text-gray-900">모바일 애플리케이션 모의해킹</h2>
+            <p class="text-base text-gray-600">모바일 환경 특성을 반영한 정적·동적 분석으로 런타임 취약성과 데이터 유출 가능성을 선제적으로 차단합니다.</p>
+          </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+            <div class="rounded-2xl step-tone-90 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 01</span>
+              <p class="mt-2 text-sm font-semibold">사전 업무 협의</p>
+            </div>
+            <div class="rounded-2xl step-tone-80 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 02</span>
+              <p class="mt-2 text-sm font-semibold">정보 수집</p>
+            </div>
+            <div class="rounded-2xl step-tone-70 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 03</span>
+              <p class="mt-2 text-sm font-semibold">모의해킹</p>
+            </div>
+            <div class="rounded-2xl step-tone-60 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 04</span>
+              <p class="mt-2 text-sm font-semibold">보고</p>
+            </div>
+          </div>
+          <div class="mt-12 grid gap-8 lg:grid-cols-[minmax(0,0.5fr)_minmax(0,1.05fr)]">
+            <div class="overflow-hidden rounded-3xl shadow-xl ring-1 ring-black/10">
+              <img src="services/services4.png" alt="모바일 애플리케이션 보안 테스트 이미지" class="h-full w-full min-h-[280px] object-cover" />
+            </div>
+            <div class="grid gap-6 sm:grid-cols-1">
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">전문성 기반 진단</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">모바일 보안에 특화된 연구자·엔지니어가 애플리케이션의 설계·구현·배포 전 과정을 분석합니다.<br><br>정적분석(바이너리·소스·라이브러리 분석)과 동적분석(런타임 후킹, 트래픽 가로채기, 프레임워크 기반 인젝션)을 병행하여 실무에서 악용 가능한 취약점을 심층적으로 발굴합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">진단 방법론</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">정적분석으로 APK/IPA의 매니페스트·라이브러리·난독화·하드코딩을 점검하고, 동적분석·리버싱(Frida, Objection, Burp, IDA 등)으로 런타임 및 네이티브 보호로직을 검증합니다.<br>자동 스캐너로 표면적 취약점을 스크리닝한 뒤 수동검증으로 오탐과 비즈니스 로직 취약점을 발굴하고, SSL pinning·루트·탈옥 우회 등으로 방어 실효성을 PoC로 확인합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">보고서 및 대응 지원</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">발견된 취약점은 위험도(상·중·하), 재현 절차(스크린샷·로그) 및 PoC(단계별 공격 시나리오)와 함께 정리합니다.<br><br>플랫폼별(Android/iOS) 보완 가이드—안전한 키 관리, 민감정보 암호화 및 최소권한 원칙, 안전한 네트워크 통신 구현, 난독화 및 무결성 검증 적용—을 제공하고 패치 우선순위와 테스트 케이스를 제시합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">교육·전수 활동</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">개발팀을 대상으로 안전한 모바일 개발 가이드와 코드 리뷰 세션을 제공합니다.<br><br>실무 중심의 워크숍(Frida 실습, 안전한 키 관리, 네트워크 보안 모범 사례)을 통해 재발 방지 역량을 강화합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">기대 효과</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">앱 배포 전·후 취약점 제거로 서비스 신뢰성 및 사용자 데이터 보호 수준을 높이며, 앱 스토어 심사·규제 대응에 필요한 보안성 검증을 지원합니다.<br><br>결과적으로 보안 사고로 인한 피해(데이터 유출, 무단 권한획득, 서비스 중단)를 사전에 차단하여 비즈니스 연속성을 확보합니다.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services5" class="w-full max-w-6xl">
+        <div class="glass-card rounded-3xl px-6 py-12 shadow-xl ring-1 ring-white/60 md:px-12 md:py-16">
+          <div class="mx-auto flex max-w-3xl flex-col items-center gap-3 text-center">
+            <span class="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--accent)]">Service 05</span>
+            <h2 class="text-3xl font-bold text-gray-900">시나리오 기반 시스템 해킹</h2>
+            <p class="text-base text-gray-600">공격자 관점의 연쇄 시나리오로 핵심 자산까지의 침투 가능성을 검증하고, 대응 체계를 강화합니다.</p>
+          </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+            <div class="rounded-2xl step-tone-90 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 01</span>
+              <p class="mt-2 text-sm font-semibold">사전 업무 협의</p>
+            </div>
+            <div class="rounded-2xl step-tone-80 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 02</span>
+              <p class="mt-2 text-sm font-semibold">정보수집</p>
+            </div>
+            <div class="rounded-2xl step-tone-70 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 03</span>
+              <p class="mt-2 text-sm font-semibold">모의해킹</p>
+            </div>
+            <div class="rounded-2xl step-tone-60 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 04</span>
+              <p class="mt-2 text-sm font-semibold">보고</p>
+            </div>
+          </div>
+          <div class="mt-12 grid gap-8 lg:grid-cols-[minmax(0,0.5fr)_minmax(0,1.05fr)]">
+            <div class="overflow-hidden rounded-3xl shadow-xl ring-1 ring-black/10">
+              <img src="services/services5.png" alt="시스템 해킹 시나리오 테스트 이미지" class="h-full w-full min-h-[280px] object-cover" />
+            </div>
+            <div class="grid gap-6 sm:grid-cols-1">
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">현실성 있는 위협 모델 적용</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">조직의 비즈니스 모델·네트워크 구조·사용자 행태를 고려한 현실적인 공격 시나리오를 설계합니다.<br><br>단순 취약점 스캔을 넘어, 공격자의 관점에서 연쇄적인 침투 경로(Initial Access → Lateral Movement → Privilege Escalation → Data Exfiltration)를 검증합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">진단 방법론</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">위협 모델링(ATT&amp;CK 매핑)과 자산 우선순위로 테스트 범위를 설계한 뒤, 외부 공격·내부 침투·권한 상승·횡적 이동을 단계별로 재현하고 스테이저·C2·터널링 등 실제 악성 기법을 적용해 방어 실효성을 검증합니다.<br>동시에 SIEM·EDR·NDR에서 경보 생성·정확성 및 대응 절차를 점검하며, 모든 테스트는 사전 합의된 범위와 통제된 환경(백업·롤백 포함)에서 안전하게 실행합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">보고서 및 대응 지원</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">공격 시나리오별 재현 절차·증거(로그·트레이스·스크린샷)와 함께 영향도 분석을 제공하고, 우선순위 기반 완화 계획(단계별 수리·구성 변경·패치 적용)을 제시합니다.<br><br>탐지 규칙(시그니처·행위 기반)과 포렌식 수집·보존 가이드를 포함하여 재발 방지 및 사고 대응 역량을 강화합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">교육·모의훈련</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">운영·보안팀 대상 테이블탑 연습(탐지→분석→대응)과 실전 대응 훈련을 제공하여 탐지-대응 사이클의 숙련도를 향상시킵니다.<br><br>또한 사고 이후 복구 절차와 포렌식 증거 보존 교육을 통해 조직의 회복탄력성을 제고합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">기대 효과</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">실제 공격 시나리오를 통한 검증으로 보안 통제의 실효성을 객관적으로 확인하고, 우선시해야 할 개선 항목을 명확히 도출합니다.<br><br>이를 통해 침해 발생 시 피해 범위를 최소화하고, 탐지·대응 능력을 강화하여 조직 전체의 보안 성숙도를 획기적으로 향상시킬 수 있습니다.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services6" class="w-full max-w-6xl">
+        <div class="glass-card rounded-3xl px-6 py-12 shadow-xl ring-1 ring-white/60 md:px-12 md:py-16">
+          <div class="mx-auto flex max-w-3xl flex-col items-center gap-3 text-center">
+            <span class="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--accent)]">Service 06</span>
+            <h2 class="text-3xl font-bold text-gray-900">인프라 취약점 진단</h2>
+            <p class="text-base text-gray-600">정기적인 인프라 점검과 개선 지원으로 서비스 기반 구조의 보안 수준을 상시 점검합니다.</p>
+          </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+            <div class="rounded-2xl step-tone-90 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 01</span>
+              <p class="mt-2 text-sm font-semibold">인프라 현황 파악</p>
+            </div>
+            <div class="rounded-2xl step-tone-80 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 02</span>
+              <p class="mt-2 text-sm font-semibold">보안 취약성 점검</p>
+            </div>
+            <div class="rounded-2xl step-tone-70 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 03</span>
+              <p class="mt-2 text-sm font-semibold">점검 결과 분석</p>
+            </div>
+            <div class="rounded-2xl step-tone-60 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 04</span>
+              <p class="mt-2 text-sm font-semibold">보고서 및 보안 대책 제시</p>
+            </div>
+          </div>
+          <div class="mt-12 grid gap-8 lg:grid-cols-[minmax(0,0.5fr)_minmax(0,1.05fr)]">
+            <div class="overflow-hidden rounded-3xl shadow-xl ring-1 ring-black/10">
+              <img src="services/services6.png" alt="보안 취약점 진단 이미지" class="h-full w-full min-h-[280px] object-cover" />
+            </div>
+            <div class="grid gap-6 sm:grid-cols-1">
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">전문성 기반 진단</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">경험 많은 인프라·네트워크 보안 전문가가 시스템 구성·운영 절차·접근 통제 현황을 종합적으로 분석합니다.<br><br>단순한 취약점 스캔에 그치지 않고 서비스 구조와 운영 관행을 고려한 실무 중심의 취약점 발굴을 수행합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">진단 방법론</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">자동화 스캐닝(Nessus/OpenVAS/Nmap 등)으로 표면적 취약점을 수집한 뒤, 수동 검증으로 오탐을 제거하고 구성·권한·운영상의 심층 취약점(권한 오용·비즈니스 영향)을 발굴합니다.<br>클라우드·컨테이너는 IaC 설정·퍼미션 모델·이미지 및 런타임 스캔으로 점검합니다.<br>취약점별 PoC로 실제 영향도를 확인하고, 테스팅 윈도우·롤백 등 통제된 환경에서 우선순위별 개선안을 제시합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">보고서 및 대응 지원</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">발견된 취약점은 등급(상·중·하)·영향도·권장조치 순으로 명확히 정리하며, 재현 절차·증거(로그·스크린샷)와 함께 단기·중기·장기 개선 로드맵을 제시합니다.<br><br>패치 가이드, 보안 설정 예시, 방화벽/ACL 수정안, 클라우드 권한 최소화 방안 등 실무 적용 가능한 산출물을 제공합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">교육·전수 활동</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">운영팀 대상 보안 운영(패치·백업·로그 관리) 교육과 보안 구성 체크리스트를 제공하여 운영상 실수를 줄이고 보안 관행을 내재화합니다.<br><br>또한 보안 대응 시나리오 기반 워크숍을 통해 사고 시 복구 역량을 강화합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">기대 효과</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">인프라 취약점의 체계적 제거와 운영 절차 개선을 통해 서비스 가용성·무결성·기밀성을 높이고, 침해 사고·서비스 중단 리스크를 저감합니다.<br><br>더불어 규제·컴플라이언스 요구사항 충족과 내부 운영 효율성 향상으로 조직 전반의 보안 성숙도를 제고합니다.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services7" class="w-full max-w-6xl">
+        <div class="glass-card rounded-3xl px-6 py-12 shadow-xl ring-1 ring-white/60 md:px-12 md:py-16">
+          <div class="mx-auto flex max-w-3xl flex-col items-center gap-3 text-center">
+            <span class="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--accent)]">Service 07</span>
+            <h2 class="text-3xl font-bold text-gray-900">IoT 보안 진단</h2>
+            <p class="text-base text-gray-600">디바이스부터 클라우드까지 연결된 IoT 환경을 종합적으로 점검해 제품과 서비스의 신뢰성을 확보합니다.</p>
+          </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+            <div class="rounded-2xl step-tone-90 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 01</span>
+              <p class="mt-2 text-sm font-semibold">현황 분석</p>
+            </div>
+            <div class="rounded-2xl step-tone-80 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 02</span>
+              <p class="mt-2 text-sm font-semibold">취약점 점검</p>
+            </div>
+            <div class="rounded-2xl step-tone-70 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 03</span>
+              <p class="mt-2 text-sm font-semibold">위험분석 및 모의해킹</p>
+            </div>
+            <div class="rounded-2xl step-tone-60 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 04</span>
+              <p class="mt-2 text-sm font-semibold">결과보고 및 지원</p>
+            </div>
+          </div>
+          <div class="mt-12 grid gap-8 lg:grid-cols-[minmax(0,0.5fr)_minmax(0,1.05fr)]">
+            <div class="overflow-hidden rounded-3xl shadow-xl ring-1 ring-black/10">
+              <img src="services/services7.png" alt="IoT 보안 진단 이미지" class="h-full w-full min-h-[280px] object-cover" />
+            </div>
+            <div class="grid gap-6 sm:grid-cols-1">
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">전문성 기반 진단</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">임베디드 시스템, 무선통신, 펌웨어 분석에 정통한 보안 전문가가 하드웨어·소프트웨어·클라우드 연계 관점에서 종합적 진단을 수행합니다.<br><br>제조사·운영환경별 특성과 실제 운용 시나리오를 반영하여 실무에서 악용될 수 있는 취약점을 중점적으로 발굴합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">진단 방법론</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">디바이스·펌웨어 버전·통신 프로토콜·관리 포털 등 자산을 식별·우선순위화합니다.<br>펌웨어 정적분석(바이너리/파일시스템)과 동적검증(트래픽 가로채기, 무선 테스트, 인증 우회·세션 하이재킹), 하드웨어(디버그 포트·물리 인터페이스·사이드채널) 및 클라우드/API(인증·토큰·로그) 점검을 병행합니다.<br>모든 테스트는 사전 합의된 통제된 환경에서 안전하게 실행해 서비스 영향을 최소화합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">보고서 및 대응 지원</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">발견된 취약점은 등급화(상·중·하) 및 실환경 영향도 평가와 함께 PoC, 재현 절차, 권장 패치·구성 변경안을 제공합니다.<br><br>펌웨어 서명·무결성 검증, 안전한 OTA 업데이트, 통신 암호화 권고, 디폴트 자격증명 제거 등 즉시 적용 가능한 가이드를 제공합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">교육·전수 활동</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">제조사·운영팀 대상 보안 설계 가이드, 안전한 펌웨어 개발 교육, 프로비저닝·운영 보안 체크리스트를 제공하여 개발·운영 역량을 강화합니다.<br><br>또한 침해사고 대응 시나리오 기반 훈련을 통해 사고 발견·격리·복구 과정의 숙련도를 높입니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">기대 효과</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">디바이스·네트워크·클라우드 전반의 취약점 해소로 서비스 신뢰성과 사용자 안전성을 확보합니다.<br><br>공급망 리스크를 줄이고, 제품의 시장 경쟁력 및 규제 준수성을 높여 장기적 운영 비용 절감과 브랜드 신뢰도 향상에 기여합니다.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services8" class="w-full max-w-6xl">
+        <div class="glass-card rounded-3xl px-6 py-12 shadow-xl ring-1 ring-white/60 md:px-12 md:py-16">
+          <div class="mx-auto flex max-w-3xl flex-col items-center gap-3 text-center">
+            <span class="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--accent)]">Service 08</span>
+            <h2 class="text-3xl font-bold text-gray-900">시큐어코딩 컨설팅</h2>
+            <p class="text-base text-gray-600">개발 단계부터 보안을 내재화해 안전한 소프트웨어가 지속적으로 배포되도록 지원합니다.</p>
+          </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-5">
+            <div class="rounded-2xl step-tone-90 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 01</span>
+              <p class="mt-2 text-sm font-semibold">사전 준비</p>
+            </div>
+            <div class="rounded-2xl step-tone-80 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 02</span>
+              <p class="mt-2 text-sm font-semibold">보안취약점 진단</p>
+            </div>
+            <div class="rounded-2xl step-tone-70 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 03</span>
+              <p class="mt-2 text-sm font-semibold">진단 결과 분석</p>
+            </div>
+            <div class="rounded-2xl step-tone-60 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 04</span>
+              <p class="mt-2 text-sm font-semibold">조치방안 수립</p>
+            </div>
+            <div class="rounded-2xl step-tone-58 px-4 py-6 text-white shadow-sm">
+              <span class="text-xs uppercase tracking-[0.35em] text-white/70">Step 05</span>
+              <p class="mt-2 text-sm font-semibold">사후관리</p>
+            </div>
+          </div>
+          <div class="mt-12 grid gap-8 lg:grid-cols-[minmax(0,0.5fr)_minmax(0,1.05fr)]">
+            <div class="overflow-hidden rounded-3xl shadow-xl ring-1 ring-black/10">
+              <img src="services/services8.png" alt="시큐어코딩 컨설팅 이미지" class="h-full w-full min-h-[280px] object-cover" />
+            </div>
+            <div class="grid gap-6 sm:grid-cols-1">
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">전문성 기반 지원</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">보안에 정통한 개발자·컨설턴트가 애플리케이션 아키텍처와 개발 프로세스를 검토하여 보안 설계 원칙(Least Privilege, Fail-secure, Defense in Depth)을 반영합니다.<br><br>조직의 개발 문화와 워크플로우에 맞춘 현실적인 시큐어코딩 표준을 제시합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">방법론</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">수동·자동 코드리뷰와 SAST로 소스레벨 취약점을 빠르게 탐지하고 DAST/런타임 검증으로 실행 환경의 인젝션·인증 우회 등 동적 취약점을 확인한 뒤 오탐은 수동 검증으로 보정합니다.<br>PR/머지 단계에 SAST·SCA·테스트 자동화를 연동해 병합 전 차단하고, 시큐어코딩 가이드·코드 수정안·테스트 케이스 및 교육으로 개발자 피드백 루프를 운영해 재발을 방지합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">보고서 및 대응 지원</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">취약점은 우선순위(상·중·하)와 함께 재현 절차, 코드 위치, 패치 예시(수정 전후 코드), 단위/통합 테스트 케이스를 포함하여 명확히 제시합니다.<br><br>또한 시큐어코딩 표준 문서, 코드 검토 체크리스트, CI/CD 연동 가이드를 제공하여 실무 적용을 지원합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">교육·전수 활동</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">언어·프레임워크별 실무 중심 워크숍(예: 안전한 입력 처리, 안전한 인증 구현, 비밀관리)과 코드 리뷰 실습을 제공하여 개발자의 보안 역량을 내재화합니다.<br><br>정기적인 보안 챌린지 및 피드백 세션으로 학습 효과를 지속적으로 유지합니다.</p>
+              </article>
+              <article class="h-full rounded-2xl border border-gray-200 bg-white/85 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <h3 class="text-lg font-semibold text-gray-900">기대 효과</h3>
+                <p class="mt-3 text-sm leading-relaxed text-gray-600">개발 초기 단계에서 보안을 내재화함으로써 취약점 수정 비용을 절감하고 배포 후 보안 사고 발생 가능성을 현저히 낮춥니다.<br><br>안전한 코드 습관과 자동화된 검증 체계 도입을 통해 소프트웨어 품질과 신뢰성을 향상시키며, 규제·감사 대응 역량도 강화됩니다.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-gray-200 bg-white/90 py-6">
+      <div class="mx-auto flex max-w-6xl items-center justify-center gap-4 text-sm text-gray-600">
+        <img src="/logo1.jpg" alt="CUB Networks Logo" class="h-8" />
+        <span>© 2025 CuB Networks. All rights reserved.</span>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
+

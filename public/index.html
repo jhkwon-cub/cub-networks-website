@@ -19,53 +19,84 @@
   <body id="top" class="bg-white text-gray-900">
     <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md p-4 border-b border-gray-300 flex flex-col md:flex-row items-center justify-between w-full">
       <div class="flex items-center gap-4">
-        <a href="#top"><img src="/logo1.jpg" alt="CUB Networks Logo" class="w-36 h-auto cursor-pointer" /></a>
+        <a href="#top"><img src="logo1.jpg" alt="CUB Networks Logo" class="w-36 h-auto cursor-pointer" /></a>
       </div>
-      <nav class="mt-4 md:mt-0 space-x-4 text-sm md:text-base text-gray-800">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#services" class="hover:underline">Services</a>
-        <a href="#specialist" class="hover:underline">Specialist</a>
-        <a href="#recruit" class="hover:underline">Recruit</a>
-        <a href="#contact" class="hover:underline">Contact</a>
+      <nav class="mt-4 md:mt-0 flex flex-wrap items-center gap-4 text-sm md:text-base text-gray-800">
+        <a href="index.html#about" class="font-bold text-[color:var(---highlight)]">About</a>
+        <div class="relative group">
+          <a href="index.html#services" class="inline-flex items-center font-bold text-[color:var(---highlight)] focus:outline-none">
+            Services
+            <svg class="ml-1 h-3 w-3 text-gray-500 transition group-hover:rotate-180 group-focus-within:rotate-180" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </a>
+          <div class="pointer-events-none absolute left-1/2 top-full z-10 w-48 -translate-x-1/2 rounded-xl border border-gray-200 bg-white p-2 text-sm shadow-lg opacity-0 scale-95 transition duration-150 ease-out group-hover:pointer-events-auto group-hover:opacity-100 group-hover:scale-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100 group-focus-within:scale-100">
+            <a href="services.html" class="block rounded-lg px-3 py-2 font-semibold text-[var(--highlight)]" aria-current="page">Services</a>
+            <a href="sentinelone.html" class="block rounded-lg px-3 py-2 font-semibold text-[var(--highlight)]" aria-current="page">SentinelOne</a>
+          </div>
+        </div>
+        <a href="index.html#specialist" class="font-bold text-[color:var(---highlight)]">Specialist</a>
+        <a href="index.html#history" class="font-bold text-[color:var(---highlight)]">History</a>
+        <a href="index.html#pjreferences" class="font-bold text-[color:var(---highlight)]">Project References</a>
+        <a href="index.html#recruit" class="font-bold text-[color:var(---highlight)]">Recruit</a>
+        <a href="index.html#contact" class="font-bold text-[color:var(---highlight)]">Contact</a>
       </nav>
     </header>
 
     <!-- Hero Banner -->
-    <section class="w-full h-[45vh] bg-[url('/main.png')] bg-center bg-cover bg-no-repeat flex items-center justify-center text-center text-white">
-      <div class="p-6 rounded-xl bg-[rgba(0,0,0,0.2)] backdrop-blur">
-        <h1 class="text-2xl md:text-4xl font-bold mb-4 text-white">정보보안의 새로운 기준</h1>
-        <p class="text-base md:text-lg">CuB Networks는 전문성과 신뢰를 기반으로 보안 컨설팅을 제공합니다。</p>
+    <section class="w-full h-[45vh] bg-[url('gray_baner.jpg')] bg-center bg-cover bg-no-repeat flex items-center justify-center text-center text-white">
+      <div class="p-6 rounded-xl backdrop-blur">
+        <h1 class="text-2xl md:text-5xl font-bold mb-4 text-white">정보보안의 새로운 기준</h1>
+        <p class="text-base md:text-lg">CuB Networks는 전문성과 신뢰를 기반으로 보안 컨설팅을 제공합니다.</p>
       </div>
     </section>
 
     <main class="flex flex-col items-center justify-center py-32 px-6 md:px-12 lg:px-16 bg-gray-100 space-y-32">
 
-      <section id="about" class="w-full max-w-6xl px-6 md:px-10">
-        <h2 class="text-2xl font-bold text-[color:var(--highlight)] text-center mb-10">About</h2>
-        <div class="flex flex-col md:flex-row items-center gap-10">
-          <div class="flex-1">
-            <img src="/about-office.jpg" alt="Office" class="rounded-xl shadow-md w-full h-auto" />
-          </div>
-          <div class="flex-1 space-y-6">
-            <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow p-6 hover:shadow-md">
-              <h3 class="text-lg font-bold text-gray-800">회사 소개</h3>
-              <p class="text-sm leading-relaxed">(주)큐브네트웍스는 모의해킹을 중심으로 정보보안 컨설팅을 전문으로 하는 기업으로, 다양한 산업 분야에 투입되어 보안 취약점을 진단하고 최적의 보안 솔루션을 제공합니다。</p>
-            </div>
-            <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow p-6 hover:shadow-md">
-              <h3 class="text-lg font-bold text-gray-800">전문 인력 운영</h3>
-              <p class="text-sm leading-relaxed">사내 기술 교육과 지식 공유를 활발히 진행하며, 여러 보안 전문 업체와 협력하여 고객에게 높은 수준의 인적·지적 보안 서비스를 제공하기 위해 최선을 다하고 있습니다。</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<section id="about" class="w-full max-w-6xl px-6 md:px-10">
+  <h2 class="text-2xl font-bold text-[color:var(--highlight)] text-center mb-10">
+    About
+  </h2>
+
+  <!-- 내용 영역 (왼쪽 이미지 + 오른쪽 카드들) -->
+  <div class="flex flex-col md:flex-row items-center gap-10">
+    <div class="flex-1">
+      <img src="about-office.jpg" alt="Office" class="rounded-xl shadow-md w-full h-auto" />
+    </div>
+
+    <div class="flex-1 space-y-6">
+      <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow p-6 hover:shadow-md">
+        <h3 class="text-lg font-bold text-gray-800">회사 소개</h3>
+        <p class="text-sm leading-relaxed">
+          (주)큐브네트웍스는 모의해킹을 중심으로 정보보안 컨설팅을 전문으로 하는 기업으로, 다양한 산업 분야에 투입되어 보안 취약점을 진단하고 최적의 보안 솔루션을 제공합니다.
+        </p>
+      </div>
+      <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow p-6 hover:shadow-md">
+        <h3 class="text-lg font-bold text-gray-800">전문 인력 운영</h3>
+        <p class="text-sm leading-relaxed">
+          사내 기술 교육과 지식 공유를 활발히 진행하며, 여러 보안 전문 업체와 협력하여 고객에게 높은 수준의 인적·지적 보안 서비스를 제공하기 위해 최선을 다하고 있습니다.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 섹션 전체 기준 가운데 위치하는 버튼 -->
+  <div class="mt-8 flex justify-center">
+    <a href="#" class="inline-block px-6 py-3 bg-[color:var(--highlight)] text-white font-semibold rounded-lg shadow transition transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:bg-gray-800"
+    onclick="alert('준비중 입니다.');">
+      📄 회사 소개서 다운로드
+    </a>
+  </div>
+</section>
+
 
 		<section id="services" class="w-full max-w-6xl px-6 md:px-10">
 		  <h2 class="text-2xl font-bold text-[color:var(--highlight)] text-center mb-10">Services</h2>
 		  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 			<div class="bg-gradient-to-b from-gray-50 to-white border border-gray-200 p-6 rounded-xl shadow hover:shadow-md transition-all text-center">
 			  <div class="flex justify-center gap-4 mb-4">
-				  <img src="/images/img1_1.png" alt="정보보호 관리 체계/인증 컨설팅 이미지1" class="h-16" />
-				  <img src="/images/img1_2.png" alt="정보보호 관리 체계/인증 컨설팅 이미지2" class="h-16" />
+				  <img src="images/img1_1.png" alt="정보보호 관리 체계/인증 컨설팅 이미지1" class="h-16" />
+				  <img src="images/img1_2.png" alt="정보보호 관리 체계/인증 컨설팅 이미지2" class="h-16" />
 				</div>
 			
 			  <h3 class="text-lg font-bold text-gray-800">정보보호 관리 체계/인증 컨설팅</h3>
@@ -75,7 +106,7 @@
 			</div>
 
 			<div class="bg-white border border-gray-200 p-6 rounded-xl shadow text-center">
-			  <img src="/images/img2.png" alt="정보보호 솔루션 제공" class="mx-auto mb-4 h-16" />
+			  <img src="images/img2.png" alt="정보보호 솔루션 제공" class="mx-auto mb-4 h-16" />
 			  <h3 class="text-lg font-bold text-gray-800">정보보호 솔루션 제공</h3>
 			  <p class="text-sm leading-relaxed text-gray-700">
 				고객 환경과 요구사항을 반영해 최적의 보안 솔루션을 제안하고, 네트워크·엔드포인트·클라우드 전반에 걸쳐 구축·운영을 지원합니다.
@@ -83,7 +114,7 @@
 			</div>
 
 			<div class="bg-white border border-gray-200 p-6 rounded-xl shadow text-center">
-			  <img src="/images/img3.png" alt="웹 어플리케이션 해킹" class="mx-auto mb-4 h-16" />
+			  <img src="images/img3.png" alt="웹 어플리케이션 해킹" class="mx-auto mb-4 h-16" />
 			  <h3 class="text-lg font-bold text-gray-800">웹 어플리케이션 해킹</h3>
 			  <p class="text-sm leading-relaxed text-gray-700">
 				최신 웹 공격 기법과 OWASP Top 10을 기반으로 인증, 세션, 인젝션, XSS 등 주요 취약점을 진단하고 대응 방안을 제시합니다.
@@ -91,7 +122,7 @@
 			</div>
 
 			<div class="bg-white border border-gray-200 p-6 rounded-xl shadow text-center">
-			  <img src="/images/img4.png" alt="모바일 어플리케이션 해킹" class="mx-auto mb-4 h-16" />
+			  <img src="images/img4.png" alt="모바일 어플리케이션 해킹" class="mx-auto mb-4 h-16" />
 			  <h3 class="text-lg font-bold text-gray-800">모바일 어플리케이션 해킹</h3>
 			  <p class="text-sm leading-relaxed text-gray-700">
 				Android, iOS 앱을 정적·동적 분석해 취약점을 진단하고 리버스엔지니어링, 후킹 등 기법을 활용해 안전한 모바일 서비스 환경을 제공합니다.
@@ -99,7 +130,7 @@
 			</div>
 
 			<div class="bg-white border border-gray-200 p-6 rounded-xl shadow text-center">
-			  <img src="/images/img5.png" alt="시나리오 기반 시스템 해킹" class="mx-auto mb-4 h-16" />
+			  <img src="images/img5.png" alt="시나리오 기반 시스템 해킹" class="mx-auto mb-4 h-16" />
 			  <h3 class="text-lg font-bold text-gray-800">시나리오 기반 시스템 해킹</h3>
 			  <p class="text-sm leading-relaxed text-gray-700">
 				실제 공격 시나리오를 기반으로 내부 침투, 권한 상승, 자산 접근 등을 검증하며, 탐지와 대응 능력까지 평가해 현실적인 보안 강화 방안을 제시합니다.
@@ -107,7 +138,7 @@
 			</div>
 
 			<div class="bg-white border border-gray-200 p-6 rounded-xl shadow text-center">
-			  <img src="/images/img6.png" alt="인프라 취약점 진단" class="mx-auto mb-4 h-16" />
+			  <img src="images/img6.png" alt="인프라 취약점 진단" class="mx-auto mb-4 h-16" />
 			  <h3 class="text-lg font-bold text-gray-800">인프라 취약점 진단</h3>
 			  <p class="text-sm leading-relaxed text-gray-700">
 				서버, 네트워크, 데이터베이스, 클라우드 등 IT 인프라 전반을 자동화 진단과 수동 검증을 병행해 보안 취약점을 종합적으로 점검하고 개선 방향을 제시합니다.
@@ -115,7 +146,7 @@
 			</div>
 
 			<div class="bg-white border border-gray-200 p-6 rounded-xl shadow text-center">
-			  <img src="/images/img7.png" alt="IoT 보안 진단" class="mx-auto mb-4 h-16" />
+			  <img src="images/img7.png" alt="IoT 보안 진단" class="mx-auto mb-4 h-16" />
 			  <h3 class="text-lg font-bold text-gray-800">IoT 보안 진단</h3>
 			  <p class="text-sm leading-relaxed text-gray-700">
 				다양한 IoT 디바이스 및 통신 환경을 고려한 보안 취약점을 진단하고, 안전한 IoT 환경 구축을 지원합니다.
@@ -123,34 +154,137 @@
 			</div>
 
 			<div class="bg-white border border-gray-200 p-6 rounded-xl shadow text-center">
-			  <img src="/images/img8.png" alt="시큐어코딩 컨설팅" class="mx-auto mb-4 h-16" />
+			  <img src="images/img8.png" alt="시큐어코딩 컨설팅" class="mx-auto mb-4 h-16" />
 			  <h3 class="text-lg font-bold text-gray-800">시큐어코딩 컨설팅</h3>
 			  <p class="text-sm leading-relaxed text-gray-700">
 				개발 초기 단계부터 보안을 고려한 시큐어코딩 가이드를 제공하고, 코드 분석을 통해 보안 취약점을 사전에 제거합니다.
 			  </p>
 			</div>
-
 		  </div>
+      <div class="mt-8 flex justify-center">
+      <a href="services.html" class="inline-block px-6 py-3 bg-[color:var(--highlight)] text-white font-semibold rounded-lg shadow transition transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:bg-gray-800">
+        자세히 보기
+      </a>
+    </div>
 		</section>
 
-
-
-      <section id="specialist" class="w-full max-w-6xl px-6 md:px-10">
-        <h2 class="text-2xl font-bold text-[color:var(--highlight)] text-center mb-10">Specialist</h2>
-        <div class="flex flex-col md:flex-row items-center gap-10">
-          <div class="flex-1 space-y-6">
-            <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow p-6 hover:shadow-md">
-              <p class="text-sm leading-relaxed">체계적인 사내 교육 시스템과 실전 중심의 기술 트레이닝을 통해 정보보안 분야의 전문성과 실무 능력을 고루 갖춘 인재를 육성합니다。</p>
-            </div>
-            <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow p-6 hover:shadow-md">
-              <p class="text-sm leading-relaxed">자기개발을 위한 자격 취득 지원 및 커리어 성장 프로그램을 운영하며、고객에게는 검증된 최고 수준의 기술 인력을 안정적으로 제공합니다。</p>
-            </div>
+    <section id="specialist" class="w-full max-w-6xl px-6 md:px-10">
+      <h2 class="text-2xl font-bold text-[color:var(--highlight)] text-center mb-10">Specialist</h2>
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <div class="flex-1 space-y-6">
+          <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow p-6 hover:shadow-md">
+            <p class="text-sm leading-relaxed">체계적인 사내 교육 시스템과 실전 중심의 기술 트레이닝을 통해 정보보안 분야의 전문성과 실무 능력을 고루 갖춘 인재를 육성합니다.</p>
           </div>
-          <div class="flex-1">
-            <img src="/specialist.png" alt="Specialist" class="rounded-xl shadow-md w-full h-auto" />
+          <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow p-6 hover:shadow-md">
+            <p class="text-sm leading-relaxed">자기개발을 위한 자격 취득 지원 및 커리어 성장 프로그램을 운영하며、고객에게는 검증된 최고 수준의 기술 인력을 안정적으로 제공합니다.</p>
           </div>
         </div>
-      </section>
+        <div class="flex-1">
+          <img src="specialist.png" alt="Specialist" class="rounded-xl shadow-md w-full h-auto" />
+        </div>
+      </div>
+    </section>
+
+    <section id="history" class="w-full max-w-6xl px-6 md:px-10">
+      <h2 class="text-2xl font-bold text-[color:var(--highlight)] text-center mb-10">History</h2>
+      <div class="flex flex-wrap justify-center items-center gap-2 mb-8 text-center"></div>
+      <div class="flex flex-col md:flex-row gap-10 mt-10">
+        <div class="md:w-1/2 flex items-center justify-center">
+          <img src="history-office.jpg" alt="History" class="rounded-xl shadow-md max-h-[246.4px] w-full object-cover" />
+        </div>
+        <div class="md:w-1/2">
+          <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow-lg p-6">
+            <h3 class="text-xl font-bold border-b border-gray-200 pb-2 mb-4 text-gray-800">Cub History</h3>
+            <div class="space-y-4 text-sm md:text-base">
+              <div>
+                <ul class="list-disc list-inside text-gray-700">
+                  <li>24.11.07 (주)큐브네트웍스 설립</li>
+                  <li>25.02.25 사내 기술 교육체계 확립</li>
+                  <li>25.05.24 Sentinel One 파트너쉽 체결</li>
+                  <li>25.06.24 BNI innovation 챕터 초청</li>
+                  <li>25.09.01 기술 특허 출원</li>
+                  <li>25.09.04 기업부설 연구소 설립</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="projectreferences" class="w-full max-w-6xl px-6 md:px-10">
+  <h2 class="text-2xl font-bold text-[color:var(--highlight)] text-center mb-10">
+    Projcet References
+  </h2>
+  <div class="flex flex-wrap justify-center items-center gap-2 mb-8 text-center"></div>
+
+  <div class="flex flex-col md:flex-row gap-10 mt-10">
+    <div class="md:w-1/2">
+      <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow-lg p-6">
+        <h3 class="text-xl font-bold border-b border-gray-200 pb-2 mb-4 text-gray-800">
+          Projcet References
+        </h3>
+
+        <div class="space-y-4 text-sm md:text-base">
+          <div>
+            <!-- 2024년 그대로 -->
+            <p class="font-bold text-gray-800">2024년</p>
+            <ul class="list-disc list-inside text-gray-700">
+              <li>
+                신한은행_하반기 전자금융기반시설 보안취약점 분석평가<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사업_모의해킹
+              </li>
+              <li>SK렌터카 웹/어플리케이션 진단_모의해킹</li>
+            </ul>
+
+            <br />
+
+            <!-- 2025년 + 접기/펼치기 -->
+            <p class="font-bold text-gray-800">2025년</p>
+            <!-- 먼저 항상 보이는 항목들 -->
+            <ul class="list-disc list-inside text-gray-700">
+              <li>
+                인천국제공항공사_사이버보안관제 및 정보보호운영관리<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;용역_모의해킹
+              </li>
+              <li>하이픈코퍼레이션 모의해킹 및 인프라 진단</li>
+              <li>한국정보통신/보안컨설팅(취약점진단_WEB/APP)</li>
+                          </ul>
+            <!-- ... 버튼 + 숨겨진 리스트 -->
+            <details class="group mt-1">
+              <!-- 펼쳐지기 전 가운데 정렬된 ...  -->
+              <summary class="cursor-pointer text-center text-gray-500 text-sm group-open:hidden list-none marker-none">
+                . . .
+              </summary>
+              <!-- 펼쳤을 때만 보이는 나머지 항목들 -->
+              <ul class="list-disc list-inside text-gray-700 mt-2">
+                <li>금융보안원 공개용 홈페이지 취약점 분석·평가 위탁용역_모의해킹</li>
+                <li>두나무 연간 보안컨설팅_모의해킹</li>
+                <li>넥스트레이드 원격보안관제서비스_모의해킹 이행점검</li>
+                <li>
+                  독거노인/장애인 응급안전안심서비스 어플리케이션 코드 비교<br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;분석 및 자문 서비스
+                </li>
+                <li>신한은행 하반기 전자금융기반시설 보안취약점 분석평가_모의해킹</li>
+                <li>삼성증권 연간 상시진단 서비스_모의해킹</li>
+                <li>빛가람시스템 웹/모바일 점검</li>
+                <li>금융보안원 공개용 홈페이지 취약점 분석·평가 위탁용역_모의해킹</li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md:w-1/2 flex items-center justify-center">
+      <img
+        src="project-references.jpg"
+        alt="Projectreferences"
+        class="rounded-xl shadow-md max-h-[362.7px] w-full object-cover"
+      />
+    </div>
+  </div>
+</section>
+
 
       <section id="recruit" class="w-full max-w-6xl px-6 md:px-10">
         <h2 class="text-2xl font-bold text-[color:var(--highlight)] text-center mb-10">Recruit</h2>
@@ -177,7 +311,7 @@
         </div>
         <div class="flex flex-col md:flex-row gap-10 mt-10">
           <div class="md:w-1/2 flex items-center justify-center">
-            <img src="/recruit-image.jpg" alt="채용 관련 이미지" class="rounded-xl shadow-md max-h-[400px] w-full object-cover" />
+            <img src="recruit-image.jpg" alt="채용 관련 이미지" class="rounded-xl shadow-md max-h-[400px] w-full object-cover" />
           </div>
           <div class="md:w-1/2">
             <div class="bg-white text-gray-800 border border-gray-300 rounded-xl shadow-lg p-6">
@@ -227,7 +361,7 @@
           </div>
           <div class="md:w-1/2 flex justify-center">
             <a href="https://naver.me/5pqayvTB" target="_blank" rel="noopener noreferrer">
-              <img src="/newmap.png" alt="회사 위치 지도" class="w-full md:w-[600px] h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" />
+              <img src="newmap.png" alt="회사 위치 지도" class="w-full md:w-[600px] h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" />
             </a>
           </div>
         </div>
@@ -236,7 +370,7 @@
     </main>
 
     <footer class="flex items-center justify-center text-sm text-gray-600 py-6 border-t border-gray-200 mt-16">
-      <img src="/logo1.jpg" alt="Logo" class="h-8 mr-4">
+      <img src="logo1.jpg" alt="Logo" class="h-8 mr-4">
       <span>© 2025 CuB Networks. All rights reserved.</span>
     </footer>
   </body>
